@@ -1,0 +1,36 @@
+<main>
+
+    <h1>Formulário de Cadastro</h1>
+
+    {{!-- Formulário --}}
+    <div class ="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <form action="/cadastrar" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required><br>
+
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" required><br>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" required><br>
+
+                    <label for="ministerios">Ministérios:</label>
+                    <input type="text" class="form-control" id="ministerios" name="ministerios"><br>
+
+                    <label for="quantidade_filhos">Quantidade de Filhos:</label>
+                    <input type="number" class="form-control" id="quantidade_filhos" name="quantidade_filhos"><br>
+
+                    <label for="nome_filhos">Nome dos Filhos (separados por vírgula):</label>
+                    <input type="text" class="form-control" id="nome_filhos" name="nome_filhos"><br>
+
+                    <label for="sugestoes">Sugestões:</label>
+                    <textarea id="sugestoes" class="form-control" name="sugestoes"></textarea><br>
+
+                    <input type="submit" class="btn btn-primary" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
